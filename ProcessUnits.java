@@ -1,6 +1,6 @@
 package hadoop;
 import java.util.*;
-import java.io.IOException; import java.io.IOException;
+import java.io.IOException;
 import org.apache.hadoop.fs.Path; import org.apache.hadoop.conf.*; import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapred.*; import org.apache.hadoop.util.*;
 public class ProcessUnits {
@@ -55,4 +55,4 @@ conf.setOutputFormat(TextOutputFormat.class);
 FileInputFormat.setInputPaths(conf, new Path(args[0]));
 FileOutputFormat.setOutputPath(conf, new Path(args[1]));
 JobClient.runJob(conf);
-} }
+} }
